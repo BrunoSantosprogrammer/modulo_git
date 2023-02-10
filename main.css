@@ -2,68 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    font-style: italic;
+    font-weight:bold;
+    margin: 40px;
+    background-color: #E7E7E7;
 }
 
 .container {
-    margin: 80px auto;
-    max-width: 640px;
+    max-width: 960px;
     width: 100%;
+    margin: 0 auto;
 }
 
-.container h1{
-    margin-bottom:20px;
+header  {
+    margin-bottom: 24px;
+    max-width: 360px;
 }
-
 form {
-    margin-top: 30px;
+    max-width: 360px;
 }
 
-input, textarea, button {
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.form-campo input {
+    width: 100%;
     display: block;
     padding: 8px;
-    margin-bottom: 8px;
-    width: 70%;
-    resize: none;
+    border: none;
 }
 
-button {
-    background-color: #2d2fb4;
+button{
+    padding: 8px 0;
+    width: 120px;
+    background-color: #3CB371;
     border: none;
-    text-transform: uppercase;
-    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: bold;
-    font-size: 18px;
-    font-style:italic;
+    font-style: italic;
     cursor: pointer;
 }
 
-button:hover {
-    background-color:#0b0bad;
-}
-
-.confirmed-message {
-    background-color: rgb(19, 194, 48);
-    padding: 12px;
-    color: #0b0bad;
-    display: none;
-    font-weight: bold;
-    width: 70%;
-}
-
-.error-message {
-    width:70%;
-    margin-bottom: 8px;
-    margin-top: -4px;
-    color: #fff;
-    background-color: red;
-    outline-color: blue;
-    font-size: 12px;
-    display:none;
-}
-
-input.error{
-    color: red;
-    border-color: red;
-    outline-color: red;
-}
